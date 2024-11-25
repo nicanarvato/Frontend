@@ -14,7 +14,6 @@ function About () {
       backgroundPosition: "center",
       minHeight: "100vh", 
       width: "100vw",
-      paddingTop: "10px",
       position:"relative"
     }}>
       <Navbar bg="dark" data-bs-theme="dark">

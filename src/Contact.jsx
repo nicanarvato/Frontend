@@ -14,7 +14,6 @@ function Contact () {
       backgroundPosition: "center",
       minHeight: "100vh", 
       width: "100vw",
-      paddingTop: "10px",
       position:"relative"
     }}>
       <Navbar bg="dark" data-bs-theme="dark">
@@ -24,7 +23,7 @@ function Contact () {
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/education">Education</Nav.Link>
-            <Nav.Link href="/hobbiess">Hobbies</Nav.Link>
+            <Nav.Link href="/hobbies">Hobbies</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </Container>

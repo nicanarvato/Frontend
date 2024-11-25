@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import BackgroundImage from "./assets/andrei-r-popescu-evDCeV-adM4-unsplash.jpg";
 
-function Hobbies () {
+function About () {
 
   return (
     <div style={{
@@ -14,7 +14,6 @@ function Hobbies () {
       backgroundPosition: "center",
       minHeight: "100vh", 
       width: "100vw",
-      paddingTop: "10px",
       position:"relative"
     }}>
       <Navbar bg="dark" data-bs-theme="dark">
@@ -24,7 +23,7 @@ function Hobbies () {
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/education">Education</Nav.Link>
-            <Nav.Link href="/hobbiess">Hobbies</Nav.Link>
+            <Nav.Link href="/hobbies">Hobbies</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </Container>
@@ -34,4 +33,4 @@ function Hobbies () {
   )
 }
 
-export default Hobbies
+export default About
