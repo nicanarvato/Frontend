@@ -32,8 +32,7 @@ function Education () {
               display: "flex",
               justifyContent: "center",
               paddingTop:"60px",
-              display: "flex",
-            flexDirection:"column",}}>
+            flexDirection:"column"}}>
       
       <Card style={{height:"10rem",width:"100vw",justifyContent: "center", alignItems: "center", backgroundColor:'#982B1C',marginTop:"70px"}}>
       <Card.Body><h1 style={{fontSize:"4rem",color:"white",fontWeight:"bold"}}>Background  Studies</h1></Card.Body>
