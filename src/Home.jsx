@@ -1,11 +1,21 @@
 import { Link } from 'react-router-dom';
-import { Container, Navbar, Nav, Row,Col, Image } from 'react-bootstrap';
-import ProfileImage from './assets/idk5mjwz.jpg'; // Replace with your actual image path
+import { Container, Navbar, Nav } from 'react-bootstrap';
+import Typical from 'react-typical'; // Import the react-typical library
+import BackgroundImage from './assets/background.jpg'; // Replace with your background image
 
 function Home() {
 
   return (
-    <div style={{ backgroundColor: "#f1f1f1", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+    <div 
+      style={{ 
+        backgroundImage: `url(${BackgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column'
+      }}
+    >
       <Navbar bg="dark" data-bs-theme="dark" fixed="top">
         <Container>
           <Navbar.Brand as={Link} to="/">Nica.Web</Navbar.Brand>
@@ -18,28 +28,34 @@ function Home() {
           </Nav>
         </Container>
       </Navbar>
-<div style={{flexGrow:"1"}}>
-  <div style={{ display: "flex", alignItems: "center", marginTop: "100px", padding: "50px" }}>
-  <div style={{ flex: "1", textAlign: "left" ,fontFamily:"Georgia,seriff"}}>
-    <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>
-      Hello, I am Dominnica <br />
-    San Lorenzo Narvato</h1>
-    <p style={{ fontSize: "1.2rem" }}>
-      I am a college student of Naga College Foundation Inc.
-      Currently studying Bachelor In Science in Information System. <br />
-      I am also a working student currently working as a Pharmacy Assistant.
-    </p>
-  </div>
-  <div>
-    <Image src={ProfileImage} thumbnail style={{ width:"300px" }} />
-  </div>
-</div>
-</div>
+
+      <div style={{ flexGrow: "1", color: "#fff" }}>
+        <div style={{ display: "flex", alignItems: "center", marginTop: "100px", padding: "50px" }}>
+          <div style={{ flex: "1", textAlign: "left", fontFamily: "Georgia, serif" }}>
+            <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>
+              Hello, I am Dominnica <br />
+              San Lorenzo Narvato
+            </h1>
+            {/* Typing text effect */}
+            <Typical
+              steps={[
+                'I am a college student of Naga College Foundation Inc.', 3000,
+                'Currently studying Bachelor In Science in Information System.', 3000,
+                'I am also a working student.', 3000
+              ]}
+              loop={Infinity} // Loop the typing animation infinitely
+              wrapper="p"
+              style={{ fontSize: "1.2rem" }}
+            />
+          </div>
+        </div>
+      </div>
+
       <footer style={{ textAlign: "center", padding: "30px", backgroundColor: "#333", color: "#fff" }}>
-        <p>&copy; 2024 Dominnica San Lorenzo Narvato</p>
+        <p>&copy; @All rights reserved by Nica.Web 2024 limited</p>
       </footer>
     </div>
   );
 }
 
-export default Home
+export default Home;

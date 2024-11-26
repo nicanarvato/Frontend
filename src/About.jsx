@@ -2,7 +2,7 @@ import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import BackgroundImage from "./assets/andrei-r-popescu-evDCeV-adM4-unsplash.jpg";
+import BackgroundImage from "./assets/53533242_432060137531250_8369841780350255104_n.jpg";
 
 function About() {
   return (
@@ -50,7 +50,7 @@ function About() {
           }}
         >
           <div>
-            <h1>Hello world</h1>
+            <h1>About Me</h1>
           </div>
         </div>
 
@@ -64,7 +64,7 @@ function About() {
               color: "#fff",
             }}
           >
-            <p>&copy; 2024 Dominnica San Lorenzo Narvato</p>
+            <p>&copy;  @All rights reserved by Nica.Web 2024 limited </p>
           </footer>
         </div>
       </div>
