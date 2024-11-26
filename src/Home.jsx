@@ -1,128 +1,59 @@
-import { useState } from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import BackgroundImage from "./assets/andrei-r-popescu-evDCeV-adM4-unsplash.jpg";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { Container, Navbar, Nav } from 'react-bootstrap';
+import ProfileImage from './assets/idk5mjwz.jpg'; // Replace with your actual image path
 
-function Home () {
+// Function to split text into chunks of 6 words per line
+const splitTextIntoLines = (text, wordsPerLine = 10) => {
+  const words = text.split(" "); // Split text by spaces into words
+  const lines = [];
+  for (let i = 0; i < words.length; i += wordsPerLine) {
+    lines.push(words.slice(i, i + wordsPerLine).join(" ")); // Join 6 words per line
+  }
+  return lines;
+};
 
-  const splitTextIntoLines = (text, wordsPerLine = 6) => {
-    const words = text.split(" ");
-    const lines = [];
-    for (let i = 0; i < words.length; i += wordsPerLine) {
-      lines.push(words.slice(i, i + wordsPerLine).join(" "));
-    }
-    return lines;
-  };
+function Home() {
+  const paragraphText = "I am a college student of Naga College Foundation INC. Bachelor In Science in Information System. I am also A Working student as a Pharmacy Assistant.";
 
-  const paragraphText =
-    "Hello welcome to My Personal Website, feel free to visit my Profile Dominnica San Lorenzo Narvato";
+  const lines = splitTextIntoLines(paragraphText, 10); // 
 
-  const lines = splitTextIntoLines(paragraphText, 6);
   return (
-    <div style={{
-      backgroundImage: `url(${BackgroundImage})`,
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-      minHeight: "100vh", 
-      width: "100vw",
-      position:"relative"
-    }}>
+    <div style={{ backgroundColor: "#f1f1f1", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <Navbar bg="dark" data-bs-theme="dark" fixed="top">
         <Container>
           <Navbar.Brand as={Link} to="/">Nica.Web</Navbar.Brand>
           <Nav className="me-auto">
-          <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link as={Link} to="/home">Home</Nav.Link>
+            <Nav.Link as={Link} to="/about">About</Nav.Link>
             <Nav.Link href="/education">Education</Nav.Link>
             <Nav.Link href="/hobbies">Hobbies</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-          <div className="mt-5" style={{paddingTop:"220px"}}>  
-          <div style={{
-            fontFamily: "Georgia, serif",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}>
-          <h1  style={{
-              color: "yellow",
-              fontWeight: "bold",
-              fontSize: "5rem",
-              animation: "popUp 2s ease-in-out",
-            }}>
-          My Personal Website </h1>
-          <style>
-        {`
-          @keyframes popUp {
-            0% {
-              transform: scale(0.5);
-              opacity: 0;
-            }
-            50% {
-              transform: scale(1.1);
-              opacity: 0.7;
-            }
-            100% {
-              transform: scale(1);
-              opacity: 1;
-            }
-          }
 
-          @keyframes typing {
-            from {
-              width: 0;
-            }
-            to {
-              width: 100%;
-            }
-          }
+      <div style={{ marginTop: "100px", textAlign: "left", padding: "50px" }}>
+        <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>Hello, I am Dominnica San Lorenzo Narvato</h1>
+        
+        {/* Display the lines of text */}
+        <div>
+          {lines.map((line, index) => (
+            <p key={index} style={{ fontSize: "1.2rem", color: "#555" }}>
+              {line}
+            </p>
+          ))}
+        </div>
 
-          @keyframes blink {
-            50% {
-              border-color: transparent;
-        }
-        }
-        `}
-      </style>
-      <br />
-      <p
-      style={{
-        fontFamily: "Georgia, serif",
-        color: "yellow",
-        fontSize: "1.5rem",
-        marginTop: "1rem",
-        whiteSpace: "nowrap",
-        overflow: "hidden",
-        borderRight: "10px light yellow", // Simulate a cursor
-        animation:
-          "blink 0.5s step-end infinite",
-        width: "fit-content", // To accommodate the typing animation
-      }}
-      >
-       {lines.map((line, index) => (
-              <span
-                key={index}
-                style={{
-                  display: "block", // Each line on a new line
-                }}
-              >
-                {line}
-              </span>
-            ))
-            }
-      
-      </p>
-          </div>
-          </div>    
+        <div style={{ margin: "20px auto", borderRadius: "50%", overflow: "hidden", width: "150px", height: "150px", backgroundColor: "#FFEB3B" }}>
+          <img src={ProfileImage} alt="Profile" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        </div>
+      </div>
 
+      <footer style={{ textAlign: "center", padding: "30px", backgroundColor: "#333", color: "#fff" }}>
+        <p>&copy; 2024 Dominnica San Lorenzo Narvato</p>
+      </footer>
     </div>
-  )
+  );
 }
 
 export default Home
