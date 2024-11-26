@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import Typical from 'react-typical'; // Import the react-typical library
-import BackgroundImage from './src/assets/background.jpg'; // Replace with your background image
+import BackgroundImage from './src/assets/idk5mjwz.jpg'; // Replace with your background image
 
 function Home() {
 
