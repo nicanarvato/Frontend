@@ -2,7 +2,7 @@ import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import BackgroundImage from "./assets/53533242_432060137531250_8369841780350255104_n.jpg";
+import BackgroundImage from "./src/assets/53533242_432060137531250_8369841780350255104_n.jpg";
 
 function About() {
   return (
