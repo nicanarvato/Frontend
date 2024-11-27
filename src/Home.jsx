@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom';
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import Typical from 'react-typical'; // Import the react-typical library
-import BackgroundImage from './assets/background.jpg'; // Replace with your background image
+import BackgroundImage from './assets/53533242_432060137531250_8369841780350255104_n.jpg'; // Replace with the path to your background image
 
 function Home() {
 
   return (
     <div 
       style={{ 
-        backgroundImage: `url(${BackgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        minHeight: '100vh',
+        backgroundImage: `url(${BackgroundImage})`, // Set the background image
+        backgroundSize: 'cover', // Make sure the image covers the whole div
+        backgroundPosition: 'center', // Center the image
+        minHeight: '100vh', // Full height of the viewport
         display: 'flex',
         flexDirection: 'column'
       }}
@@ -29,24 +28,18 @@ function Home() {
         </Container>
       </Navbar>
 
-      <div style={{ flexGrow: "1", color: "#fff" }}>
-        <div style={{ display: "flex", alignItems: "center", marginTop: "100px", padding: "50px" }}>
+      <div style={{ flexGrow: "1", color: "#fff" }}> {/* Make text color white for visibility */}
+        <div style={{ display: "flex", alignItems: "center", marginTop: "100px", padding: "80px" }}>
           <div style={{ flex: "1", textAlign: "left", fontFamily: "Georgia, serif" }}>
             <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>
               Hello, I am Dominnica <br />
               San Lorenzo Narvato
             </h1>
-            {/* Typing text effect */}
-            <Typical
-              steps={[
-                'I am a college student of Naga College Foundation Inc.', 3000,
-                'Currently studying Bachelor In Science in Information System.', 3000,
-                'I am also a working student.', 3000
-              ]}
-              loop={Infinity} // Loop the typing animation infinitely
-              wrapper="p"
-              style={{ fontSize: "1.2rem" }}
-            />
+            <p style={{ fontSize: "1.2rem" }}>
+              I am a college student of Naga College Foundation Inc.
+              Currently studying Bachelor In Science in Information System. <br />
+              I am also a working student currently working as a Pharmacy Assistant.
+            </p>
           </div>
         </div>
       </div>
