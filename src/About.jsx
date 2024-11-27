@@ -76,10 +76,10 @@ function About() {
               <CiUser style={{fontSize:"180px"}}/>
             </div>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Skills</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Computer Literate.
+          Good in Costumer Service.
         </Card.Text>
       </Card.Body>
     </Card>
@@ -94,10 +94,12 @@ function About() {
               <GiSkills style={{fontSize:"180px"}}/>
             </div>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Organization Attended</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Service Scholar (UNBOUND)
+          Cadet Officer Leadership Trainings
+          Music MInistry Club
+          Commission In Womens Right's 2018
         </Card.Text>
       </Card.Body>
     </Card>

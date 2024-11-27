@@ -73,10 +73,15 @@ function Contact() {
       gap: "10px", // Spacing between items
     }}
   >
-    <CiFacebook style={{ fontSize: "60px" }} />
+
+<a href="https://www.facebook.com/dominnica.narvato.1"
+              target="_blank"
+              rel="noopener noreferrer">
+            <CiFacebook style={{ margin: "0 0.5rem",  fontSize: "60px"}} />
+            </a>
     <div>
       <h4>Facebook</h4>
-      <p>Facebook Account</p>
+      <p>www.facebook.com/dominnica.narvato</p>
     </div>
   </div>
 
@@ -90,7 +95,7 @@ function Contact() {
     <FaPhoneAlt style={{ fontSize: "50px" }} />
     <div>
       <h4>Contact Number</h4>
-      <p>Number</p>
+      <p>+639386490799</p>
     </div>
   </div>
 
@@ -105,7 +110,7 @@ function Contact() {
     <IoMail style={{ fontSize: "50px" }} />
     <div>
       <h4>Email Account</h4>
-      <p>Email</p>
+      <p>dominicanarvato@gmail.com</p>
     </div>
   </div>
 

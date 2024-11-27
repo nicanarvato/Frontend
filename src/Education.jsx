@@ -107,38 +107,38 @@ function Education() {
 
 <div style={timelineStyle}>
 <div style={itemStyle}>
-        <div style={dateStyle}>2019-Present</div>
+        <div style={dateStyle}>S/Y 2019-Present</div>
         <div style={contentStyle}>
-          <h3 style={{marginLeft:"20%"}}>Naga College Foundation</h3>
+          <h3 style={{marginLeft:"20%"}}>Naga College Foundation Inc.</h3>
           <p>Bachelor of Science in Information System</p>
           <p>M.t. Villanueva Ave.Naga City</p>
         </div>
       </div>
 
       <div style={itemStyle}>
-        <div style={dateStyle}>2017-2019</div>
+        <div style={dateStyle}>S/Y 2017-2019</div>
         <div style={contentStyle}>
-          <h3 style={{marginLeft:"20%"}}>
-            Started My Career</h3>
-          <p>Started working as a frontend developer.</p>
+          <h3 style={{marginLeft:"20%"}}>AMA Computer College</h3>
+          <p>Information in Communication Technology (TVL)</p>
+          <p>Magsaysay Avenue, Brgy. Balatas Naga City</p>
         </div>
       </div>
 
       <div style={itemStyle}>
-        <div style={dateStyle}>2025</div>
+        <div style={dateStyle}>S/Y 2012-2017</div>
         <div style={contentStyleOdd}>
-          <h3 style={{marginLeft:"10%"}}>
-            Promoted to Senior Developer</h3>
-          <p>Advanced to senior frontend developer position.</p>
+          <h3 style={{marginLeft:"15%"}}>
+           Gainza National High School </h3>
+          <p>Gainza Camarines Sur</p>
         </div>
       </div>
 
       <div style={itemStyle}>
-        <div style={dateStyle}>2026</div>
+        <div style={dateStyle}>S/Y 2012-2008</div>
         <div style={contentStyle}>
-          <h3 style={{marginLeft:"20%"}}>
-            Lead Frontend Developer</h3>
-          <p>Started leading frontend development projects.</p>
+          <h3 style={{marginLeft:"15%"}}>
+            Cagbunga Elementary Scghhol</h3>
+          <p>Cagbunga Gainza Camarines Sur</p>
         </div>
       </div>
     </div>
