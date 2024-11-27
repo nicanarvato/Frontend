@@ -25,7 +25,7 @@ function About() {
             position: "relative",
           }}
         >
-          <Navbar bg="dark" data-bs-theme="dark">
+          <Navbar data-bs-theme="dark" style={{backgroundColor:"clear"}}>
             <Container>
               <Navbar.Brand href="/">Nica.Web</Navbar.Brand>
               <Nav className="me-auto">
@@ -45,7 +45,6 @@ function About() {
           style={{
             flexGrow: "1", // Fill up remaining space
             display: "flex", // Enable flexbox
-            alignItems: "center", // Center vertically
             justifyContent: "center", // Center horizontally
           }}
         >
