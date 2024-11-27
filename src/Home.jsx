@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import BackgroundImage from './assets/53533242_432060137531250_8369841780350255104_n.jpg'; // Replace with the path to your background image
+import BackgroundImage from "./assets/53533242_432060137531250_8369841780350255104_n.jpg"; // Replace with the path to your background image
 
 function Home() {
 

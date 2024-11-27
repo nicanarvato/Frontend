@@ -3,17 +3,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import BackgroundImage from "./assets/andrei-r-popescu-evDCeV-adM4-unsplash.jpg";
 
-function Education () {
-
+function Education() {
   return (
     <div style={{
       backgroundImage: `url(${BackgroundImage})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
-      minHeight: "100vh", 
-      width: "100vw",
-      position:"relative"
+      minHeight: "100vh",
+      width: "100vw"
     }}>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
@@ -28,8 +26,7 @@ function Education () {
         </Container>
       </Navbar>
     </div>
-   
-  )
+  );
 }
 
-export default Education
+export default Education;
