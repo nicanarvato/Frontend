@@ -2,7 +2,13 @@ import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Card from 'react-bootstrap/Card';
+
 import BackgroundImage from "./assets/andrei-r-popescu-evDCeV-adM4-unsplash.jpg";
+import { CiUser } from "react-icons/ci";
+import { GiSkills } from "react-icons/gi";
+import { MdModelTraining } from "react-icons/md";
+
 
 function About() {
   return (
@@ -37,22 +43,83 @@ function About() {
               </Nav>
             </Container>
           </Navbar>
+
+          <div style={{position: "absolute", // Allows precise positioning
+          bottom: "20px", // Positions text 20px from the bottom of the container
+          left: "15%", // Centers horizontally
+          transform: "translateX(-50%)", // Ensures perfect centering
+          color: "white", // White text for contrast
+          textAlign: "center", }}>
+            <h1>About Me</h1>
+          </div>
+
         </div>
 
         {/* Main Content Here */}
         <div
-          className="mt-5"
+          className="mt-5 g-4"
           style={{
             flexGrow: "1", // Fill up remaining space
             display: "flex", // Enable flexbox
-            justifyContent: "center", // Center horizontally
-            alignItems: "center", 
-            marginTop: "20px", 
-          }}
-        >
-          <div>
-            <h1>About Me</h1>
-          </div>
+            marginTop: "20px",
+            justifyContent:"center",
+            gap:"20px"}}>
+
+<Card style={{ width: '18rem' }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}>
+
+              <CiUser style={{fontSize:"180px"}}/>
+            </div>
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem' }}>
+    <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}>
+
+              <GiSkills style={{fontSize:"180px"}}/>
+            </div>
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem' }}>
+    <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}>
+
+              <MdModelTraining style={{fontSize:"180px"}}/>
+            </div>
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+
         </div>
 
         {/* Footer Section */}
