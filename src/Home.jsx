@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 //import Typical from 'react-typical'; // Import the react-typical library
-import BackgroundImage from './assets/idk5mjwz.jpg'; // Replace with your background image
+import BackgroundImage from './assets/53533242_432060137531250_8369841780350255104_n.jpg'; // Replace with your background image
 
 function Home() {
 
@@ -30,7 +30,7 @@ function Home() {
       </Navbar>
 
       <div style={{ flexGrow: "1", color: "#fff" }}>
-        <div style={{ display: "flex", alignItems: "center", marginTop: "100px", padding: "50px" }}>
+        <div style={{ display: "flex", alignItems: "center", marginTop: "100px", padding: "80px" }}>
           <div style={{ flex: "1", textAlign: "left", fontFamily: "Georgia, serif" }}>
             <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>
               Hello, I am Dominnica <br />
@@ -39,9 +39,9 @@ function Home() {
             {/* Typing text effect */}
             {/* <Typical */}
               {/* steps={[ */}
-                <p>'I am a college student of Naga College Foundation Inc.'
-                'Currently studying Bachelor In Science in Information System.'
-                'I am also a working student.'</p>
+                <p>'I am a college student of Naga College Foundation Inc.'</p>
+               <p> 'Currently studying Bachelor In Science in Information System.'</p>
+               <p>'I am also a working student.'</p>
               {/* ]} */}
               {/* loop={Infinity} // Loop the typing animation infinitely
               wrapper="p" */}
@@ -52,7 +52,7 @@ function Home() {
       </div>
 
       <footer style={{ textAlign: "center", padding: "30px", backgroundColor: "#333", color: "#fff" }}>
-        <p>&copy; @All rights reserved by Nica.Web 2024 limited</p>
+        <p>&copy; All rights reserved by Nica.Web 2024 limited</p>
       </footer>
     </div>
   );
